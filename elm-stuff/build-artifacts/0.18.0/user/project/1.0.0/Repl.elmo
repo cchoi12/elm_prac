@@ -1,0 +1,27 @@
+var _user$project$Repl$toFullName = function (person) {
+	return A2(
+		_elm_lang$core$Basics_ops['++'],
+		person.firstName,
+		A2(_elm_lang$core$Basics_ops['++'], ' ', person.lastName));
+};
+var _user$project$Repl$try = _user$project$Repl$toFullName(
+	{firstName: 'Dabin', lastName: 'Kwak'});
+var _user$project$Repl$t_s_o_l = {ctor: '_Tuple0'};
+var _user$project$Repl$makeSentence = function (word) {
+	return A2(
+		_elm_lang$core$Basics_ops['++'],
+		word.a,
+		A2(_elm_lang$core$Basics_ops['++'], 'walked along the', word.b));
+};
+var _user$project$Repl$sent = _user$project$Repl$makeSentence(
+	{a: 'Billy ', b: ' beach'});
+var _user$project$Repl$first = _user$project$Repl$toFullName(
+	{firstName: 'John', lastName: 'Lim'});
+var _user$project$Repl$ex = _user$project$Repl$makeSentence(
+	{a: 'Dabin Kwak ', b: ' shitty Boston'});
+var _user$project$Repl$d_e_l_t_r_o_n_3_0_3_0 = _user$project$Repl$ex;
+var _user$project$Repl$addUp = function (number) {
+	return number.a + number.b;
+};
+var _user$project$Repl$do = _user$project$Repl$addUp(
+	{a: 1, b: 10});
