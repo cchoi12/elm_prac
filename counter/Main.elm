@@ -3,9 +3,9 @@ import Html exposing (..)
 
 main =
   div []
-      [ button [] [ text "-" ]
+      [ button [] [ text "+" ]
       , div [] [ text (toString 1) ]
-      , button [] [ text "+" ]
+      , button [] [ text "-" ]
       , button [] [ text "Reset"]
       ]
 
@@ -28,3 +28,19 @@ update msg model =
 
     Reset ->
       0
+
+view: Model -> Html Msg
+view model =
+  div []
+  [ button [] [ onClick Increment ] [ text "+" ]
+  , div [] [ text (toString model) ]
+  , button [] [ onClick Decrement ] [ text "-" ]
+  , button [] [ onClick Reset ] [ text "Reset" ]
+  ]
+
+main =
+  Html.beginnerProgram
+    { model = 0
+    , view = view
+    , update = update
+    }
