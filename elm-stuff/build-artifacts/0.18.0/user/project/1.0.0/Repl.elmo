@@ -1,18 +1,11 @@
 var _user$project$Repl$t_s_o_l = {ctor: '_Tuple0'};
-var _user$project$Repl$name = 'Sam';
-var _user$project$Repl$divide5 = function (x) {
-	return x / 5;
+var _user$project$Repl$donkey = {x: 123, y: 567, z: 1023};
+var _user$project$Repl$Other = function (a) {
+	return {ctor: 'Other', _0: a};
 };
-var _user$project$Repl$divide = F2(
-	function (x, y) {
-		return x / y;
-	});
-var _user$project$Repl$d_e_l_t_r_o_n_3_0_3_0 = A2(_user$project$Repl$divide, 10, 2);
-var _user$project$Repl$add1 = function (x) {
-	return 1 + x;
-};
-var _user$project$Repl$add = F2(
-	function (x, y) {
-		return x + y;
-	});
-var _user$project$Repl$add2 = _user$project$Repl$add(2);
+var _user$project$Repl$No = {ctor: 'No'};
+var _user$project$Repl$lol = _user$project$Repl$No;
+var _user$project$Repl$Yes = {ctor: 'Yes'};
+var _user$project$Repl$Nay = {ctor: 'Nay'};
+var _user$project$Repl$Yay = {ctor: 'Yay'};
+var _user$project$Repl$rofl = _user$project$Repl$Yay;
