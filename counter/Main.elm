@@ -1,13 +1,7 @@
 module Main exposing (..)
-import Html exposing (..)
 
-main =
-  div []
-      [ button [] [ text "+" ]
-      , div [] [ text (toString 1) ]
-      , button [] [ text "-" ]
-      , button [] [ text "Reset"]
-      ]
+import Html exposing (..)
+import Html.Events exposing (onClick)
 
 type alias Model =
   Int
@@ -32,11 +26,11 @@ update msg model =
 view: Model -> Html Msg
 view model =
   div []
-  [ button [] [ onClick Increment ] [ text "+" ]
-  , div [] [ text (toString model) ]
-  , button [] [ onClick Decrement ] [ text "-" ]
-  , button [] [ onClick Reset ] [ text "Reset" ]
-  ]
+      [ button [ onClick Increment ] [ text "+" ]
+      , div [] [ text (toString model) ]
+      , button [ onClick Decrement ] [ text "-" ]
+      , button [ onClick Reset ] [ text "Reset" ]
+      ]
 
 main =
   Html.beginnerProgram
